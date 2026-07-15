@@ -17,12 +17,14 @@ export default function ProductSelector({
   options,
 }: ProductSelectorProps) {
   return (
-    <SearchableSelect
-      label="Produk HP"
-      placeholder="Cari produk OPPO..."
-      options={options}
-      value={value}
-      onChange={onChange}
-    />
+    <div className="relative">
+      <SearchableSelect
+        label="Produk HP" // Label ini yang akan muncul sebagai judul
+        placeholder="Cari produk OPPO..."
+        options={options}
+        value={value}
+        onChange={onChange}
+      />
+    </div>
   );
 }
